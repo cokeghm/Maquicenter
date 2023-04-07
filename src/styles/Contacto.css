@@ -1,0 +1,10 @@
+.titulo-categorias{  
+    margin: auto ;
+    font-weight: bold;
+    font-size: large;
+    width: fit-content;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-bottom: 3px solid rgb(255, 196, 13);
+    }

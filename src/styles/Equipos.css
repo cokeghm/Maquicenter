@@ -1,0 +1,48 @@
+.equipos{
+    font-weight: bold;
+}
+/* 
+.container{
+ margin:20px;
+ margin-top:0px;
+
+} */
+
+.titulo-categorias{  
+    margin: auto ;
+    font-weight: bold;
+    font-size: large;
+    width: fit-content;
+    text-align: center;
+    border-bottom: 25px;
+    border-bottom: 3px solid rgb(255, 196, 13);
+    }
+
+    .card{
+        align-items: center;
+    }
+
+    .card-img{
+        margin-top: 2rem;
+        width: 10rem;
+    }
+    .marca{
+        color: rgb(255, 196, 13);
+        font-weight: bold;
+        font-size:15px;
+    }
+
+    .modelo{
+        font-weight:lighter;
+        font-size:15px;
+    }
+
+    .opcion1{
+        color:red;
+        font-size:15px;
+
+    }
+   
+.card-text{
+    margin-bottom: 8px;
+}
