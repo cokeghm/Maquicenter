@@ -1,64 +1,62 @@
-import { useEffect, useState } from "react";
-import {Card, Col,Container, Row, Button, CardGroup } from "react-bootstrap";
-import NavBar from "../components/NavBar";
-import Img from "../assets/img/KARCHERB250R.png";
-import "../styles/Equipos.css";
-//TailwindCss heredado desde App.js
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import NavBar from '../components/NavBar';
+import '../styles/Equipos.css';
+import { useParams } from 'react-router-dom';
+import _ from 'lodash';
+import { Col, Empty, Row } from 'antd';
+import ProductCard from '../components/ProductCard';
 
-function Equipos(props) {
+function Equipos({ categorias, api }) {
+  const match = useParams();
 
-const match = useParams();
-  
   const [products, setProducts] = useState([]);
-  async function getProducts() {
-    const _products = await fetch(
-      `http://localhost:5001/admin-ae7ca/us-central1/getProductos?details=true&filter_categories=[${match.id}]`
-    ).then((data) => data.json());
-    setProducts(_products);
-  }
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getProducts();
-  }, [match.id]);
+    (async function getProducts() {
+      const _products = await api.products.getProducts({
+        details: true,
+        categories: [match.id, match.subCategory, match.innerCategory],
+      });
+      setProducts(_products);
+      setLoading(false);
+    })();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [match.id, match.subCategory, match.innerCategory]);
 
   function productsList() {
-    let PesoChileno = new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "CLP",
-    });
 
-    return products
-      .map((p) => (
-        <Container key={p.id}>
-            <Card>
-              <Card.Img className= "card-img" variant="top" src={Img} />
-              <Card.Body>
-                <Card.Title className="marca">{p.fabricante_modelo}</Card.Title>
-                <Card.Text className="opcion1">{p.opcion1_modelo}</Card.Text>
-                <Card.Text className="modelo">{p.nombre_modelo}</Card.Text>
-                {/* <Card.Text>{PesoChileno.format(p.precio_modelo)}</Card.Text> */}
-                <Button variant="warning">Cotizar</Button>
-              </Card.Body>
-            </Card>
-            </Container>
-      ));
+    const productElements = products.map((p, index) => (
+      <ProductCard product={p} key={index} />
+    ));
+
+    return products.length ? (
+      <div className='grid grid-cols-3 gap-0'>{productElements}</div>
+    ) : (
+      <Col span={24} className='mt-10'>
+        <Row justify='center'>
+          <Empty description={
+            <span className='font-light'>
+              Se han agotado todos los productos de esta categoría
+            </span>
+          }/>
+        </Row>
+      </Col>
+    );
   }
 
-  // console.log(productsList());
-
+  const categoryDetails =
+    _.find(categorias, { id: _.toInteger(match.id) }) || {};
   return (
-    <div className="equipos">
-      <NavBar categorias={props.categorias} />
+    <div className='equipos'>
+      <NavBar categorias={categorias} />
       <br></br>
       <br></br>
-      <h1 className="titulo-categorias">Equipos</h1>
+      <h1 className='titulo-categorias'>Equipos</h1>
+      <h2 className='titulo-categorias'>{categoryDetails.label}</h2>
       <br></br>
-      <h6>Muchas Gruas en Stock y diferentes buenas ofertas<br></br>
-      Maquinas nunca usadas en Chile, igual que nuevas</h6>
-      <div class="grid grid-cols-3 gap-0">
-      {products.length === 0 ? <div>Loading...</div> : productsList()}
-      </div>
+      {loading ? <div>Loading...</div> : productsList()}
     </div>
   );
 }
