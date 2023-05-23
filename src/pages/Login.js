@@ -1,27 +1,28 @@
 import NavBar from "../components/NavBar";
+import {Container} from 'react-bootstrap';
+import React, { useState } from "react";
+
+
 
 function Login() {
   return (
-    <div>
-      <div className="login">
+    <div class="login"> 
+    <Container fluid>
         <NavBar />
         <br></br>
         <br></br>
-        <h1 className="titulo-categorias">Login</h1>
-        <div class="grid grid-cols-3 gap-2">
-          <div>01</div>
-          <div>02</div>
-          <div>03</div>
-          <div>04</div>
-          <div>05</div>
-          <div>06</div>
-          <div>07</div>
-          <div>08</div>
-          <div>09</div>
-        </div>
+        <br></br>
+        <form className="formulario" action="/" method="">
+        {/* <div><img className="mb-4" src="" alt="" width="200" height="200 "></div> */}
+        <h1 className="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+        <input type="email"  className="form-control bottom" name= "Email" placeholder="Email" required=""></input>
+        <input type="text" className="form-control middle" name="Password" placeholder="Password" required=""></input>
+        <button className="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+        <p className="mt-5 mb-3 text-muted">© 2023 Cokeright</p>
+        
+      </form>
+      </Container>
       </div>
-    </div>
-      )
+  )
 }
-
       export default Login
