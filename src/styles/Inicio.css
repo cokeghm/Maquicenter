@@ -232,6 +232,28 @@ text{
 .about-us{
   width: 500px;
 }
+/* -----nosotros nuev0 ----- */
+/*.top-nosotros{
+  text-align: center;
+  margin: 0 40%;
+ 
+}
+
+.hr-nosotros{
+  height: 3px;
+  background-color: #FFC300;
+  opacity: inherit;
+  width: 50%;
+  margin-left: 85px;
+  margin-top: 0;
+  border-top: none;
+
+}
+
+.h2-nosotros{
+
+}*/
+
 /*----------------------------------------------------------- FOOTER-----------------------------------------------------------*/
 
 footer{
@@ -325,7 +347,7 @@ li{
 }
 
 li:hover{
-  color: #FFC300;
+  color: #FFC300 ;
 }
 
 .title-productos{
@@ -356,6 +378,11 @@ li:hover{
   padding-top: 30px;
 }
 
-html{
-  scroll-behavior: smooth;
+.footer-link{
+  color: white !important;
 }
+
+.footer-link:hover{
+  color:#FFC300 !important;
+}
+

@@ -5,7 +5,7 @@ import {Container, Col, Row, Image } from "react-bootstrap";
 function LogoBar() {
   return (
   
-  <Container className="logobar">
+  <Container className="logobar" id="home">
     <Row>
       <Col>
         <Image className="img-logo" src={LogoImg} alt="logo"/>  

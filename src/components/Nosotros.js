@@ -1,9 +1,10 @@
 import Img from "../assets/img/maquimachine.png";
 import {Col, Container, Row, Image} from 'react-bootstrap';
 
+
 function Nosotros() {
   return (
-    <div class="nosotros"> 
+    <div class="nosotros" id="Us"> 
     <Container>
         <h4 id="Nosotros">NOSOTROS</h4>
         <Row>

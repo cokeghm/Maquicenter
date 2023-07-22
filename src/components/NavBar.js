@@ -27,6 +27,7 @@ function NavBar({ categorias = [] }) {
   }
 
   return (
+    
     <Navbar expand='lg'>
       <Navbar.Toggle aria-controls='navbarScroll' />
       <Navbar.Collapse id='navbarScroll'>
@@ -38,7 +39,7 @@ function NavBar({ categorias = [] }) {
           <Nav.Link as={Link} to='/'>
             Inicio
           </Nav.Link>
-          <Nav.Link href='/#Nosotros'>Nosotros</Nav.Link>
+          <Nav.Link href='/#Nosotros' >Nosotros</Nav.Link>
           <Dropdown
             menu={{
               items,
@@ -61,6 +62,7 @@ function NavBar({ categorias = [] }) {
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>
+   
   );
 }
 
