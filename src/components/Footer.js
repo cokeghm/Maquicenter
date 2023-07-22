@@ -1,7 +1,8 @@
 import LogoImgBlanco from "../assets/img/logo-blanco.png";
 import LogoWebpayBlanco from "../assets/img/logo-webpay-blanco.png";
 import { MailOutlined} from "@ant-design/icons";
-import { Link } from 'react-router-dom'
+import {Link } from "react-scroll"
+
 
 
 
@@ -29,10 +30,11 @@ function Footer() {
             <h3 className="titles-footer">MAQUICENTER</h3>
             <hr className="hr-footer"></hr>
             <ul className="ul-footer">
-              <li><a href="">Inicio</a></li>
-              <li><a href="/#nosotros">Nosotros</a></li>
+              <li><Link className="footer-link" to="home" spy={true} duration={500} offset={-100}>Inicio</Link></li>
+              
+              <li><Link className="footer-link" to="Us" spy={true} duration={500} offset={-240}>Nosotros</Link></li>
               <li>Productos</li>
-              <li>Contacto</li>
+              <li><a className="footer-link" href="/contacto">Contacto</a></li>
             </ul>
           </div>
           <div className="slot2">
