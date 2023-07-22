@@ -1,0 +1,91 @@
+.a-aqui{
+    
+    text-decoration: underline;
+}
+
+.sign-registrarse{
+    font-size: 50px;
+}
+
+.login-form{
+    width: 50%;
+    background: #FFC300 ;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.content{
+    padding: 25px 35px 40px;
+    text-align: center;
+}
+
+.input-field{
+    padding: 12px 5px;
+    
+
+}
+
+.input-login{
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background: #FFC300 ;
+    outline: none;
+    color: black;
+
+}
+
+a.link{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    
+
+}
+
+#placeholderColor::placeholder {color: black; opacity: inherit;}
+
+.button-field{
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.hr-register{
+  height: 5px;
+  background-color: #FFC300;
+  opacity:inherit;
+  width: 25%;
+  margin-top: 1%;
+  border: #FFC300;
+  text-align: center;
+  margin-left: 37.3%;
+}
+
+.fa-solid{
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+
+.name_container{
+    padding-top: 0;
+}
+
+.login_name{
+    font-size:70px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    color: black;
+}
+
+

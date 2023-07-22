@@ -6,6 +6,7 @@ import Nosotros from "./components/Nosotros";
 import Contacto from "./pages/Contacto";
 import Equipos from "./pages/Equipos";
 import Login from "./pages/Login";
+import Register from './pages/Register'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import { useState, useEffect } from 'react';
 import * as api from './api';
@@ -37,6 +38,7 @@ function App() {
           </Route>  
           <Route path="/contacto" element={<Contacto />} /> 
           <Route path="/login" element={<Login />} /> 
+          <Route path='/register' element={<Register />}/>
           <Route path="/" exact element={<Inicio categorias={categorias} api={api}/>} />
 
         </Routes>

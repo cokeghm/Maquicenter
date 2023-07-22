@@ -206,7 +206,7 @@ text-align: center;
 }
 /*----------------------------------------------------------- NOSOTROS-----------------------------------------------------------*/
 
-.nosotros{
+/*.nosotros{
   padding: 25px 0px 60px 0px;
   text-align: left;
   text-align: justify;
@@ -231,28 +231,81 @@ text{
 
 .about-us{
   width: 500px;
-}
+}*/
 /* -----nosotros nuev0 ----- */
-/*.top-nosotros{
-  text-align: center;
-  margin: 0 40%;
- 
+.nosotros-container{
+  display: flex;
+}
+
+.l-container-nosotros{
+  
+  width: 25%;
+  justify-content: left;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 30px;
+  
+}
+
+.title-container{
+  background-color: #FFC300;
+  width: 100%;
+  justify-content: left;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.title-nosotros{
+  font-size: 70px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-left: 10px;
+  width: 20%;
+}
+
+.nosotros-img{
+  margin: 5% 0;
+  width: 100%;
+  padding-top: 10px;
 }
 
 .hr-nosotros{
-  height: 3px;
+  height: 6px;
   background-color: #FFC300;
-  opacity: inherit;
-  width: 50%;
-  margin-left: 85px;
+  opacity:inherit;
+  width: 350%;
+  border: none;
   margin-top: 0;
-  border-top: none;
+  margin-bottom: 10%;
+}
+
+.v-line{
+  border-left: 6px solid #FFC300;
+  height: 100%;
+  width: 7px;
+  margin-left: 200px;
+  margin-top: 3%;
+}
+
+.content-nosotros{
+  width: 700px;
+  justify-content: left;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 23px;
 
 }
 
-.h2-nosotros{
+.text-nosotros{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15.5px;
+  
+}
 
-}*/
+.r-container-nosotros{
+  display: flex;
+}
+
 
 /*----------------------------------------------------------- FOOTER-----------------------------------------------------------*/
 
