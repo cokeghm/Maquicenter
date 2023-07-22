@@ -16,7 +16,7 @@ function Inicio(props) {
        <Container fluid>
         <NavBar categorias={props.categorias}/>
         <LogoBar/>
-        <SearchBar />
+        <SearchBar api={props.api}/>
         <Banner />
         <Categorias categorias={props.categorias}/>
         <Nosotros />
