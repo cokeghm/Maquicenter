@@ -37,7 +37,7 @@ function App() {
           </Route>  
           <Route path="/contacto" element={<Contacto />} /> 
           <Route path="/login" element={<Login />} /> 
-          <Route path="/" exact element={<Inicio categorias={categorias}/>} />
+          <Route path="/" exact element={<Inicio categorias={categorias} api={api}/>} />
 
         </Routes>
       </Router>
