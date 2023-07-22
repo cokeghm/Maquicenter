@@ -1,6 +1,6 @@
 import { Nav, Navbar } from 'react-bootstrap';
 import { LockOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { Dropdown } from 'antd';
 import _ from 'lodash';
 
@@ -38,7 +38,7 @@ function NavBar({ categorias = [] }) {
           <Nav.Link as={Link} to='/'>
             Inicio
           </Nav.Link>
-          <Nav.Link href='#Nosotros'>Nosotros</Nav.Link>
+          <Nav.Link href='/#Nosotros'>Nosotros</Nav.Link>
           <Dropdown
             menu={{
               items,

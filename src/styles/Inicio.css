@@ -235,9 +235,127 @@ text{
 /*----------------------------------------------------------- FOOTER-----------------------------------------------------------*/
 
 footer{
-  background-color: black;
-  padding:20px;
+  background-color: #3D4144;
+  padding:20px 5px; 
   color: rgb(255, 196, 13);
   font-weight: bold;
   font-size: 15px;
+}
+
+.img-logo-footer{
+  width: 27rem;
+  margin-bottom: 50px;
+}
+
+.container-footer{
+  margin: 30px 110px;
+  display: flex;
+}
+
+.left-container{
+  text-align: left;
+  width: 30%;
+}
+
+.footer-spans{
+  color: white;
+  font-size: 15px;
+}
+
+.contact-icons{
+  color: white;
+  font-size: 30px;
+  margin-left: 15px;
+  background-color: #FFC300;
+  border-radius: 50px;
+  padding: 0.3em 0.3em;
+  
+}
+
+.contact-container{
+  display: flex;
+}
+
+.fa-whatsapp{
+  margin-left: 30px;
+  padding: 0.3em 0.4em;
+}
+
+.fa-facebook-f{
+  padding: 0.3em 0.5em;
+}
+
+
+.mail-icon{
+  position: relative;
+  bottom: 7px;
+}
+
+.right-container{
+  display: flex;
+}
+
+.titles-footer{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 20px 90px;
+  padding-bottom: 0;
+
+}
+
+.hr-footer{
+  height: 3px;
+  background-color: #FFC300;
+  opacity:inherit;
+  width: 25%;
+  margin-left: 90px;
+  margin-top: 0;
+}
+
+.ul-footer{
+  text-align: left;
+  padding: 20px 90px;
+  color: white;
+  font-size: 17px;
+}
+
+li{
+  padding-bottom: 25px;
+}
+
+li:hover{
+  color: #FFC300;
+}
+
+.title-productos{
+  text-align: left;
+}
+
+.sucursal-content{
+  display: flex;
+  
+}
+
+.title-sucursal{
+  text-align: left;
+}
+
+.icon-sucursal{
+  font-size: 30px;
+  color: #FFC300;
+  padding-right: 20px;
+}
+
+.phone-sucursal{
+  font-size: 28px                                                                                         ;
+}
+
+.img-webpay{
+  width: 18rem;
+  padding-top: 30px;
+}
+
+html{
+  scroll-behavior: smooth;
 }
