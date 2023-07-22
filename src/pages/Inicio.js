@@ -18,8 +18,7 @@ function Inicio(props) {
         <LogoBar/>
         <SearchBar />
         <Banner />
-        <Categorias />
-        <MasVendidos />
+        <Categorias categorias={props.categorias}/>
         <Nosotros />
         <Footer />
         </Container>
