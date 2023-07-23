@@ -1,31 +1,30 @@
 /*----------------------------------------------------------- GENERAL-----------------------------------------------------------*/
-.container-fluid{
+.container-fluid {
   max-width: 100%;
   padding: 0px;
 }
-
 
 /*----------------------------------------------------------- NAVBAR-----------------------------------------------------------*/
 .navbar {
   height: 3rem;
   background-color: #f0f0f7;
-  font-family: "Franklin Gothic Medium", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   font-weight: bold;
 }
 
-.navbar-nav{
-  margin-left:160px;
+.navbar-nav {
+  margin-left: 160px;
 }
 .navbar a {
   color: #32373b;
-  
+
   margin: 0px 20px 0px 20px;
   padding: 0.7rem;
 }
 
 /* Specific styles for active links */
 .nav-link:active {
-  color: rgb(255, 196, 13)  !important;
+  color: rgb(255, 196, 13) !important;
   border-bottom: 3px solid rgb(255, 196, 13);
 }
 
@@ -38,11 +37,7 @@
 .active {
   color: rgb(255, 196, 13);
 }
-/* .drop-item {
-  color: rgb(255, 196, 13);
-  background-color: white;
-  width: auto;
-} */
+
 .drop-item:hover {
   background-color: white;
   color: rgb(255, 196, 13);
@@ -56,29 +51,22 @@
   /* transition: 0.2s; */
 }
 
-.candado {
+.logo-navbar {
   display: inline-flex;
   align-items: center;
   margin-right: 10px;
 }
-.login.nav-link {
+
+.nav-item.nav-link {
   color: rgb(255, 196, 13);
 }
-.login.nav-link:hover:hover {
+
+.nav-item.nav-link:hover {
   color: #32373b;
   border-bottom: 3px solid #32373b;
   transition: 0.2s;
 }
 
-.register.nav-link{
-  color: rgb(255, 196, 13);
-  margin-right: 150px;
-}
-.register.nav-link:hover:hover {
-  color: #32373b;
-  border-bottom: 3px solid #32373b;
-  transition: 0.2s;
-  }
 .navbar .rightSide button {
   background-color: transparent;
   border: none;
@@ -86,26 +74,24 @@
   cursor: pointer;
 }
 
-
 /*----------------------------------------------------------- LOGO BAR -----------------------------------------------------------*/
 
-.logobar{
-margin: 30px 0px 30px 150px;
-text-align: left;
-width: auto;
+.logobar {
+  margin: 30px 0px 30px 150px;
+  text-align: left;
+  width: auto;
 }
 
-.img-logo{
+.img-logo {
   width: 25rem;
 }
 
-.phone-img{
-margin: auto;
-text-align: center;
+.phone-img {
+  margin: auto;
+  text-align: center;
 }
 
 .tel-icon {
-
   border: rounded;
   color: rgb(255, 196, 13);
   transform: scaleX(-1);
@@ -116,20 +102,17 @@ text-align: center;
 }
 
 .fono {
-    
   color: grey;
   margin-top: 30px;
   margin-bottom: 0px;
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
-  
 }
 
-
 /*----------------------------------------------------------- SEARCH BAR-----------------------------------------------------------*/
-.izquierda{
-  margin-left:170px;
+.izquierda {
+  margin-left: 170px;
 }
 .derecha {
   padding-left: 20px;
@@ -144,63 +127,59 @@ text-align: center;
   border-top: dotted;
   width: 10%;
   border-width: 5px;
-  border-color: #66BFBF;
+  border-color: #66bfbf;
 }
 
 .carousel-indicators .active {
   border-style: none;
   border-top: dotted;
   border-width: 5px;
-  border-color: #66BFBF;
+  border-color: #66bfbf;
 }
 
-
-
 /*----------------------------------------------------------- CATEGORIAS-----------------------------------------------------------*/
-.titulo-categorias{  
-  margin: auto ;
+.titulo-categorias {
+  margin: auto;
   font-weight: bold;
   font-size: large;
   width: fit-content;
   text-align: center;
   border-bottom: 25px;
   border-bottom: 3px solid rgb(255, 196, 13);
-  }
-  .subtitulo-cat{
-  color:  rgb(255, 196, 13);
+}
+.subtitulo-cat {
+  color: rgb(255, 196, 13);
   font-weight: bold;
   text-align: center;
   margin-bottom: 60px;
-  }
-  .categorias{
-    padding: 25px 0px 25px 0px;
-    background-color: #f4f4f6;
-    text-align: left;
-  }
+}
+.categorias {
+  padding: 25px 0px 25px 0px;
+  background-color: #f4f4f6;
+  text-align: left;
+}
 
-  .cat{
-    background-color: white;
-  }
-  .cat:hover{
-    color:rgb(255, 196, 13) !important; 
-    transition: 0.2s;
-  }
-  .img-cat{
-    max-width: 240px;
-  }
-  a{
-    font-weight: bold;
-    color:rgb(23, 22, 22) !important;
-    text-decoration:none;
-  }
-  .titulo{
-    margin-top: 40px !important;
-    
-  }
+.cat {
+  background-color: white;
+}
+.cat:hover {
+  color: rgb(255, 196, 13) !important;
+  transition: 0.2s;
+}
+.img-cat {
+  max-width: 240px;
+}
+a {
+  font-weight: bold;
+  color: rgb(23, 22, 22);
+  text-decoration: none;
+}
+.titulo {
+  margin-top: 40px !important;
+}
 /*----------------------------------------------------------- MAS VENDIDOS-----------------------------------------------------------*/
 
-.masvendidos{
-
+.masvendidos {
   padding: 25px 0px 60px 0px;
   background-color: #eaeaf1;
 }
@@ -233,209 +212,199 @@ text{
   width: 500px;
 }*/
 /* -----nosotros nuev0 ----- */
-.nosotros-container{
+.nosotros-container {
   display: flex;
 }
 
-.l-container-nosotros{
-  
+.l-container-nosotros {
   width: 25%;
   justify-content: left;
   text-align: left;
   margin-left: 10%;
   margin-top: 30px;
-  
 }
 
-.title-container{
-  background-color: #FFC300;
+.title-container {
+  background-color: #ffc300;
   width: 100%;
   justify-content: left;
   text-align: left;
   margin-top: 30px;
 }
 
-.title-nosotros{
+.title-nosotros {
   font-size: 70px;
   font-family: 'Bebas Neue', sans-serif;
   margin-left: 10px;
   width: 20%;
 }
 
-.nosotros-img{
+.nosotros-img {
   margin: 5% 0;
   width: 100%;
   padding-top: 10px;
 }
 
-.hr-nosotros{
+.hr-nosotros {
   height: 6px;
-  background-color: #FFC300;
-  opacity:inherit;
+  background-color: #ffc300;
+  opacity: inherit;
   width: 350%;
   border: none;
   margin-top: 0;
   margin-bottom: 10%;
 }
 
-.v-line{
-  border-left: 6px solid #FFC300;
+.v-line {
+  border-left: 6px solid #ffc300;
   height: 100%;
   width: 7px;
   margin-left: 200px;
   margin-top: 3%;
 }
 
-.content-nosotros{
+.content-nosotros {
   width: 700px;
   justify-content: left;
   text-align: left;
   margin-left: 10%;
   margin-top: 10%;
   font-size: 23px;
-
 }
 
-.text-nosotros{
+.text-nosotros {
   font-family: 'Montserrat', sans-serif;
   font-size: 15.5px;
-  
 }
 
-.r-container-nosotros{
+.r-container-nosotros {
   display: flex;
 }
 
-
 /*----------------------------------------------------------- FOOTER-----------------------------------------------------------*/
 
-footer{
-  background-color: #3D4144;
-  padding:20px 5px; 
+footer {
+  background-color: #3d4144;
+  padding: 20px 5px;
   color: rgb(255, 196, 13);
   font-weight: bold;
   font-size: 15px;
 }
 
-.img-logo-footer{
+.img-logo-footer {
   width: 27rem;
   margin-bottom: 50px;
 }
 
-.container-footer{
+.container-footer {
   margin: 30px 110px;
   display: flex;
 }
 
-.left-container{
+.left-container {
   text-align: left;
   width: 30%;
 }
 
-.footer-spans{
+.footer-spans {
   color: white;
   font-size: 15px;
 }
 
-.contact-icons{
+.contact-icons {
   color: white;
   font-size: 30px;
   margin-left: 15px;
-  background-color: #FFC300;
+  background-color: #ffc300;
   border-radius: 50px;
   padding: 0.3em 0.3em;
-  
 }
 
-.contact-container{
+.contact-container {
   display: flex;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
   margin-left: 30px;
   padding: 0.3em 0.4em;
 }
 
-.fa-facebook-f{
+.fa-facebook-f {
   padding: 0.3em 0.5em;
 }
 
-
-.mail-icon{
+.mail-icon {
   position: relative;
   bottom: 7px;
 }
 
-.right-container{
+.right-container {
   display: flex;
 }
 
-.titles-footer{
+.titles-footer {
   font-size: 20px;
   color: white;
   font-weight: bold;
   padding: 20px 90px;
   padding-bottom: 0;
-
 }
 
-.hr-footer{
+.hr-footer {
   height: 3px;
-  background-color: #FFC300;
-  opacity:inherit;
+  background-color: #ffc300;
+  opacity: inherit;
   width: 25%;
   margin-left: 90px;
   margin-top: 0;
 }
 
-.ul-footer{
+.ul-footer {
   text-align: left;
   padding: 20px 90px;
   color: white;
   font-size: 17px;
 }
 
-li{
+li {
   padding-bottom: 25px;
 }
 
-li:hover{
-  color: #FFC300 ;
+li:hover {
+  color: #ffc300;
 }
 
-.title-productos{
+.title-productos {
   text-align: left;
 }
 
-.sucursal-content{
+.sucursal-content {
   display: flex;
-  
 }
 
-.title-sucursal{
+.title-sucursal {
   text-align: left;
 }
 
-.icon-sucursal{
+.icon-sucursal {
   font-size: 30px;
-  color: #FFC300;
+  color: #ffc300;
   padding-right: 20px;
 }
 
-.phone-sucursal{
-  font-size: 28px                                                                                         ;
+.phone-sucursal {
+  font-size: 28px;
 }
 
-.img-webpay{
+.img-webpay {
   width: 18rem;
   padding-top: 30px;
 }
 
-.footer-link{
+.footer-link {
   color: white !important;
 }
 
-.footer-link:hover{
-  color:#FFC300 !important;
+.footer-link:hover {
+  color: #ffc300 !important;
 }
-

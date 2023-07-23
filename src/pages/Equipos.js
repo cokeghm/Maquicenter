@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import NavBar from '../components/NavBar';
 import '../styles/Equipos.css';
 import { useParams, useLocation } from 'react-router-dom';
 import _ from 'lodash';
@@ -53,7 +52,6 @@ function Equipos({ categorias, api }) {
   const categoryDetails = _.find(categorias, { id: _.toInteger(match.id) }) || { label: locationState?.customLabel || '' };
   return (
     <div className='equipos'>
-      <NavBar categorias={categorias} />
       <br></br>
       <br></br>
       <h1 className='titulo-categorias'>Equipos</h1>

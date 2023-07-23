@@ -1,6 +1,4 @@
-import NavBar from "../components/NavBar";
 import {Container} from 'react-bootstrap';
-import React, { useState } from "react";
 
 
 
@@ -8,7 +6,6 @@ function Login() {
   return (
     <div class="login"> 
     <Container fluid>
-        <NavBar />
         <br></br>
         <br></br>
         <br></br>

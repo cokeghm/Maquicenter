@@ -1,14 +1,11 @@
 import React from "react";
 import '../styles/Register.css'
 import {Link} from 'react-router-dom'
-import NavBar from "../components/NavBar";
 
 function Register(){
     
     return(
     <div>
-        <NavBar />
-        
         <div className='container_name'>
             <h1 className='login_name sign-registrarse'>Registrarse</h1>
             <hr className="hr-register"></hr>
