@@ -1,10 +1,13 @@
 import { Nav, Navbar } from 'react-bootstrap';
 import { LockOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
-import { Dropdown } from 'antd';
+import { Badge, Dropdown } from 'antd';
 import _ from 'lodash';
+import { useContext } from 'react';
+import { AppContext } from '../context/globalContext';
 
 function NavBar({ categorias = [] }) {
+  const { cart } = useContext(AppContext);
 
   const items = _.map(categorias, (categoria) => getItem(categoria));
 
@@ -16,18 +19,21 @@ function NavBar({ categorias = [] }) {
     return `/equipos/${key}`;
   }
 
-  function getItem(categoria, categoryTrace = null){
+  function getItem(categoria, categoryTrace = null) {
     const children = validChildren(categoria.children);
-    const key = categoryTrace ? `${categoryTrace}/${categoria.id}` : categoria.id;
+    const key = categoryTrace
+      ? `${categoryTrace}/${categoria.id}`
+      : categoria.id;
     return {
       key: key,
       label: <Link to={redirectionUrl(key)}>{categoria.label}</Link>,
-      children: children.length ? _.map(children, (child) => getItem(child, key)) : null
-    }
+      children: children.length
+        ? _.map(children, (child) => getItem(child, key))
+        : null,
+    };
   }
 
   return (
-    
     <Navbar expand='lg'>
       <Navbar.Toggle aria-controls='navbarScroll' />
       <Navbar.Collapse id='navbarScroll'>
@@ -39,14 +45,14 @@ function NavBar({ categorias = [] }) {
           <Nav.Link as={Link} to='/'>
             Inicio
           </Nav.Link>
-          <Nav.Link href='/#Nosotros' >Nosotros</Nav.Link>
+          <Nav.Link href='/#Nosotros'>Nosotros</Nav.Link>
           <Dropdown
             menu={{
               items,
             }}
           >
             <a href='/' onClick={(e) => e.preventDefault()}>
-                Equipos
+              Equipos
             </a>
           </Dropdown>
           <Nav.Link as={Link} to='/contacto'>
@@ -61,11 +67,12 @@ function NavBar({ categorias = [] }) {
           Registrarse
         </Nav.Link>
         <Nav.Link as={Link} to='/carro' className='nav-item'>
-          <ShoppingCartOutlined className='logo-navbar'/> Cotización
+          <Badge count={cart.length} className='logo-navbar'>
+            <ShoppingCartOutlined  /> Cotización
+          </Badge>
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>
-   
   );
 }
 

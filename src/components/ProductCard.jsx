@@ -1,9 +1,12 @@
 import { Button, Modal, Card, Container } from "react-bootstrap";
 import React, { useState } from "react";
 import ImgDefault from "../assets/img/KARCHERB250R.png";
+import { useContext } from "react";
+import { AppContext } from "../context/globalContext";
 
 
 function ProductCard({ product }) {
+  const { addItemToCart } = useContext(AppContext);
   //format price to CLP
   const formatter = new Intl.NumberFormat("es-CL", {
     style: "currency",
@@ -14,14 +17,26 @@ function ProductCard({ product }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
- 
-  String.prototype.safe = function() {
-    // safe string for html
-    return this.replace(/\"/g, "&quot;").replace(/\'/g, "&#39;").replace(/>/g, "&gt;").replace(/</g, "&lt;");
+
+  function addToCart(e){
+    e.stopPropagation();
+    addItemToCart(product)
+  };
+
+function stringCleaner(inputString) {
+
+  const tempElement = document.createElement('div');
+  tempElement.innerHTML = inputString;
+
+  const cleanedString = tempElement.textContent.replace(/<[^>]+>/g, '');
+  const cleanedStringWithoutEntities = cleanedString.replace(/&[^;]+;/g, '');
+
+  return cleanedStringWithoutEntities;
 }
+
   return (
     <Container>
-      <Card>
+      <Card onClick={handleShow}>
         <Card.Img
           className="card-img"
           variant="top"
@@ -32,25 +47,25 @@ function ProductCard({ product }) {
           <Card.Text className="opcion1">{product.opcion1_modelo}</Card.Text>
           <Card.Text className="modelo">{product.nombre_modelo}</Card.Text>
           <Card.Text>{formatter.format(product.precio_modelo)}</Card.Text>
-          <Button variant="warning" onClick={handleShow}>
+          <Button variant="warning" onClick={addToCart}>
             Cotizar
           </Button>
-          <Modal show={show} onHide={handleClose}>
+        </Card.Body>
+      </Card>
+      <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
               <Modal.Title>{product.fabricante_modelo}  {product.opcion1_modelo} </Modal.Title>
             </Modal.Header>
             <Modal.Body>
               {<img src={ImgDefault}></img>}
-              {product.descripcion_modelo.toString().replace(/&lt;p&gt;/g,'').replace(/<p>|<\/p>/g, '').replace(/&lt;\/p&gt;/g, '').replace(/&amp;oacute;/g,'ó').replace(/&lt;\/span&gt;/g, "")}
+              { stringCleaner(product.descripcion_modelo)}
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="warning" onClick={handleClose}>
+              <Button variant="warning" onClick={addToCart}>
                 Agregar al Carro
               </Button>
             </Modal.Footer>
           </Modal>
-        </Card.Body>
-      </Card>
     </Container>
   );
 }
