@@ -1,6 +1,6 @@
 import { Nav, Navbar } from 'react-bootstrap';
-import { LockOutlined } from '@ant-design/icons';
-import { Link} from 'react-router-dom';
+import { LockOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 import { Dropdown } from 'antd';
 import _ from 'lodash';
 
@@ -53,12 +53,15 @@ function NavBar({ categorias = [] }) {
             Contacto
           </Nav.Link>
         </Nav>
-        <Nav.Link as={Link} to='/login' className='login'>
-          <LockOutlined className='candado' />
+        <Nav.Link as={Link} to='/login' className='nav-item'>
+          <LockOutlined className='logo-navbar' />
           Iniciar Sesión
         </Nav.Link>
-        <Nav.Link as={Link} to='/register' className='register'>
+        <Nav.Link as={Link} to='/register' className='nav-item'>
           Registrarse
+        </Nav.Link>
+        <Nav.Link as={Link} to='/carro' className='nav-item'>
+          <ShoppingCartOutlined className='logo-navbar'/> Cotización
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>

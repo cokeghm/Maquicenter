@@ -2,7 +2,7 @@ import {Col, Row, Container} from 'react-bootstrap';
 
 const MasVendidos = () => {
   return (    
-    <div class="masvendidos">
+    <div className="masvendidos">
     <Container>
             <Row>
                   <h3 className="titulo-categorias">
@@ -12,55 +12,55 @@ const MasVendidos = () => {
                 
             </Row>
             <Row>
-                <Col class="product-item">
-                    <div class="pi-pic">
+                <Col className="product-item">
+                    <div className="pi-pic">
                       <img src="assets/img/pro-1.jpg" alt="" />
                       <ul>
-                        <li class="quick-view">
+                        <li className="quick-view">
                           <a href="#"> Ver Detalles</a>
                         </li>
                       </ul>
                     </div>
-                    <div class="pi-text">
-                      <div class="catagory-name">MODELO B250-R 2014</div>
+                    <div className="pi-text">
+                      <div className="catagory-name">MODELO B250-R 2014</div>
                       <a href="#">
                         <h5>Vacuolavadora y Fregadora</h5>
                       </a>
-                      <div class="product-price">KARCHER</div>
+                      <div className="product-price">KARCHER</div>
                     </div>
                     </Col>
-                  <Col class="product-item">
-                    <div class="pi-pic">
+                  <Col className="product-item">
+                    <div className="pi-pic">
                       <img src="assets/img/pro-2.jpg" alt="" />
                       <ul>
-                        <li class="quick-view">
+                        <li className="quick-view">
                           <a href="#">Ver Detalles</a>
                         </li>
                       </ul>
                     </div>
-                    <div class="pi-text">
-                      <div class="catagory-name">Modelo MJ346EA</div>
+                    <div className="pi-text">
+                      <div className="catagory-name">Modelo MJ346EA</div>
                       <a href="#">
                         <h5>Sierra Huincha Vertcal para Madera</h5>
                       </a>
-                      <div class="product-price">TOS-TIMEMASTER</div>
+                      <div className="product-price">TOS-TIMEMASTER</div>
                     </div>
                   </Col>
-                  <Col class="product-item">
-                    <div class="pi-pic">
+                  <Col className="product-item">
+                    <div className="pi-pic">
                       <img src="assets/img/pro-3.jpg" alt="" />
                       <ul>
-                        <li class="quick-view">
+                        <li className="quick-view">
                           <a href="#">Ver Detalles</a>
                         </li>
                       </ul>
                     </div>
-                    <div class="pi-text">
-                      <div class="catagory-name">Modelo MW5-100L/1</div>
+                    <div className="pi-text">
+                      <div className="catagory-name">Modelo MW5-100L/1</div>
                       <a href="#">
                         <h5>Electro Iman Suspendido</h5>
                       </a>
-                      <div class="product-price">TOS-TIMEMASTER</div>
+                      <div className="product-price">TOS-TIMEMASTER</div>
                     </div>
                 </Col>
          </Row>

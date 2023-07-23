@@ -18,8 +18,8 @@ function Footer() {
           <div className='contact-container'>
             <span className='footer-spans'>CONTACTANOS POR:</span>
             <div className="icons-container">
-              <i class="contact-icons fa-brands fa-whatsapp"></i>
-              <i class="contact-icons fa-brands fa-facebook-f"></i>
+              <i className="contact-icons fa-brands fa-whatsapp"></i>
+              <i className="contact-icons fa-brands fa-facebook-f"></i>
               <MailOutlined className='contact-icons mail-icon'/>
             </div>
           </div>
@@ -51,11 +51,11 @@ function Footer() {
             <hr className="hr-footer"></hr>
             <ul className="ul-footer">
               <div className="sucursal-content">
-              <i class="fa-solid fa-location-dot icon-sucursal"></i>
+              <i className="fa-solid fa-location-dot icon-sucursal"></i>
               <li>El Roble 670, Bodega 3 Lampa, Santiago de Chile</li>
               </div>
               <div className="sucursal-content">
-              <i class="fa-solid fa-phone icon-sucursal"></i>
+              <i className="fa-solid fa-phone icon-sucursal"></i>
               <li className="phone-sucursal">(+56) 2 2623 3000</li>
               </div>
              
