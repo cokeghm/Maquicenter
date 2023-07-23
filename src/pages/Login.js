@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap';
 
 function Login() {
   return (
-    <div class="login"> 
+    <div className="login"> 
     <Container fluid>
         <br></br>
         <br></br>

@@ -10,19 +10,19 @@ function Register(){
             <h1 className='login_name sign-registrarse'>Registrarse</h1>
             <hr className="hr-register"></hr>
         </div>
-        <div class="login-form">
+        <div className="login-form">
         <form>
-            <div class="content">
-                <div class="input-field">
+            <div className="content">
+                <div className="input-field">
                     <input className='input-login' type="email" placeholder="Nombre Completo" autocomplete="nope"  id="placeholderColor" />
                 </div>
-                <div class="input-field">
+                <div className="input-field">
                     <input className='input-login' type="email" placeholder="Email" autocomplete="nope" id="placeholderColor" />
                 </div>
-                <div class="input-field">
+                <div className="input-field">
                     <input className='input-login' type="password" placeholder="Contraseña" autocomplete="nope" id="placeholderColor" />
                 </div>
-                <a href="/Login" class="link">Tienes una cuenta? Ingresa <a className="a-aqui">Aqui</a></a>
+                <a href="/Login" className="link">Tienes una cuenta? Ingresa <a className="a-aqui">Aqui</a></a>
                 <div className="button-field">
                     <Link to='/'><button>Crear Cuenta</button></Link>
                 </div>
