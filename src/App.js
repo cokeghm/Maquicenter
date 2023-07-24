@@ -2,11 +2,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Inicio from './pages/Inicio';
-import Nosotros from './components/Nosotros';
+import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
 import Equipos from './pages/Equipos';
 import Login from './pages/Login';
-import Register from './pages/Register';
+import Register from './pages/RegistrationForm';
 import Carro from './pages/Carro';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';

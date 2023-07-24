@@ -11,7 +11,7 @@
 .titulo-categorias{  
     margin: auto ;
     font-weight: bold;
-    font-size: large;
+    /* font-size: large; */
     width: fit-content;
     text-align: center;
     border-bottom: 25px;

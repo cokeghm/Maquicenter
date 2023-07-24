@@ -3,12 +3,7 @@ import LogoWebpayBlanco from "../assets/img/logo-webpay-blanco.png";
 import { MailOutlined} from "@ant-design/icons";
 import {Link } from "react-scroll"
 
-
-
-
 function Footer() {
-  
-  
   
   return (
     <footer>
