@@ -45,7 +45,7 @@ function NavBar({ categorias = [] }) {
           <Nav.Link as={Link} to='/'>
             Inicio
           </Nav.Link>
-          <Nav.Link href='/#Nosotros'>Nosotros</Nav.Link>
+          <Nav.Link href='/nosotros'>Nosotros</Nav.Link>
           <Dropdown
             menu={{
               items,

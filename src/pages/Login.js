@@ -1,7 +1,5 @@
 import {Container} from 'react-bootstrap';
 
-
-
 function Login() {
   return (
     <div className="login"> 

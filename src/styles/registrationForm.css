@@ -1,0 +1,104 @@
+/* Estilos para el contenedor principal del formulario */
+.registro-form {
+  background-color: rgb(255, 196, 13);
+  border-radius: 10px;
+  color: black;
+  padding: 15px;
+  width: 75%;
+  margin:  auto;
+  margin-bottom: 50px;
+}
+
+/* Estilos para la sección "Datos Personales" y "Datos Empresa" */
+.datos-personales,
+.datos-empresa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 5px solid rgb(255, 196, 13);
+  border-radius: 10px;
+  background-color: white;
+  padding:7px;
+  width: 100%; /* Ajustar el ancho del formulario */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.password-section {
+  border: 5px solid rgb(255, 196, 13);
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+  padding-left: 20%;/* Hacer que los elementos dentro de la sección sean flexibles */
+  justify-content: center; /* Alinear los elementos horizontalmente en el centro */
+  align-items: center;
+
+}
+
+/* Estilos para cada grupo de etiqueta y campo de entrada */
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  flex-basis:150px;
+  justify-self: start;
+  text-align: left;
+  margin-left:30px;
+  display: flex; /* Hacer que el label sea un contenedor flex */
+  align-items: center; 
+}
+
+.form-group input{
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  max-width: 250px;
+  flex-basis: 250px;
+  justify-self: end;
+  font-size: small;
+
+}
+.form-group select {
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  flex-basis: 250px;
+  max-width: 250px;
+  justify-self: end;
+
+}
+
+/* Estilos adicionales */
+.registrarme-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.titulo {
+  margin: auto;
+  font-weight: bold;
+  font-size: x-large;
+  width: fit-content;
+  text-align: center;
+  border-bottom: 3px solid rgb(255, 196, 13);
+}
+
+
+h1{
+  font-size: 22px !important;
+}
+ h2 {
+  margin-bottom:30px ;
+  font-size: 20px;
+  font-weight: bold;
+  width: 80%;
+}
